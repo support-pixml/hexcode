@@ -1,0 +1,241 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+
+/* journal3/template/journal3/headers/desktop/compact.twig */
+class __TwigTemplate_4539afe45a163c51389d5095c142ed2408809f8ee9db588dcdd2cfdd3e3f9225 extends \Twig\Template
+{
+    private $source;
+    private $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->parent = false;
+
+        $this->blocks = [
+        ];
+    }
+
+    protected function doDisplay(array $context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        // line 1
+        echo "
+<div class=\"header header-compact header-sm\"
+";
+        // line 3
+        if (($context["display"] ?? null)) {
+            // line 4
+            echo "  style=\"display:none\";
+";
+        }
+        // line 6
+        echo ">
+";
+        // line 7
+        if (($context["display"] ?? null)) {
+            // line 8
+            echo "<style>
+  footer, #bottom, .page-title {
+    display: none !important;
+  }
+  h1.title {
+    font-size:26px;
+    text-align: center;
+  }
+  h1.title::after{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .badge-success {
+    background-color: #2EAF23;
+  }
+  .desktop body {
+    padding-top: 50px !important;
+  }
+</style>
+";
+        }
+        // line 28
+        echo "  <div class=\"top-bar navbar-nav\">
+    ";
+        // line 29
+        echo twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 29), "get", [0 => "desktop_top_menu"], "method", false, false, false, 29);
+        echo "
+
+    ";
+        // line 31
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 31), "get", [0 => "langPosition"], "method", false, false, false, 31) == "top")) {
+            // line 32
+            echo "      <div class=\"language-currency top-menu\">
+        <div class=\"desktop-language-wrapper\">
+          ";
+            // line 34
+            echo ($context["language"] ?? null);
+            echo "
+        </div>
+        <div class=\"desktop-currency-wrapper\">
+          ";
+            // line 37
+            echo ($context["currency"] ?? null);
+            echo "
+        </div>
+      </div>
+    ";
+        }
+        // line 41
+        echo "    <div class=\"third-menu\">";
+        echo twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 41), "get", [0 => "desktop_top_menu_3"], "method", false, false, false, 41);
+        echo "</div>
+    ";
+        // line 42
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 42), "get", [0 => "secondaryMenuPosition"], "method", false, false, false, 42) == "top")) {
+            // line 43
+            echo "      <div class=\"top-menu secondary-menu\">";
+            echo twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 43), "get", [0 => "desktop_top_menu_2"], "method", false, false, false, 43);
+            echo "</div>
+    ";
+        }
+        // line 45
+        echo "  </div>
+  <div class=\"mid-bar navbar-nav\">
+    <div class=\"desktop-logo-wrapper\">
+      <div id=\"logo\">
+        ";
+        // line 49
+        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 49), "get", [0 => "logo_src"], "method", false, false, false, 49)) {
+            // line 50
+            echo "          <a href=\"";
+            echo ($context["home"] ?? null);
+            echo "\">
+            <img src=\"";
+            // line 51
+            echo twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 51), "get", [0 => "logo_src"], "method", false, false, false, 51);
+            echo "\" ";
+            if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 51), "get", [0 => "logo2x_src"], "method", false, false, false, 51)) {
+                echo "srcset=\"";
+                echo twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 51), "get", [0 => "logo_src"], "method", false, false, false, 51);
+                echo " 1x, ";
+                echo twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 51), "get", [0 => "logo2x_src"], "method", false, false, false, 51);
+                echo " 2x\"";
+            }
+            echo " width=\"";
+            echo twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 51), "get", [0 => "logo_width"], "method", false, false, false, 51);
+            echo "\" height=\"";
+            echo twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 51), "get", [0 => "logo_height"], "method", false, false, false, 51);
+            echo "\" alt=\"";
+            echo ($context["name"] ?? null);
+            echo "\" title=\"";
+            echo ($context["name"] ?? null);
+            echo "\"/>
+          </a>
+        ";
+        } else {
+            // line 54
+            echo "          <h1><a href=\"";
+            echo ($context["home"] ?? null);
+            echo "\">";
+            echo ($context["name"] ?? null);
+            echo "</a></h1>
+        ";
+        }
+        // line 56
+        echo "      </div>
+    </div>
+    <div class=\"desktop-main-menu-wrapper navbar-nav\">
+      ";
+        // line 59
+        echo ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "document", [], "any", false, false, false, 59), "hasClass", [0 => "mobile-header-active"], "method", false, false, false, 59)) ? ("") : (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 59), "get", [0 => "desktop_main_menu"], "method", false, false, false, 59)));
+        echo "
+    </div>
+
+    <div class=\"header-cart-group\">
+      ";
+        // line 63
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 63), "get", [0 => "langPosition"], "method", false, false, false, 63) == "search")) {
+            // line 64
+            echo "        <div class=\"language-currency top-menu\">
+          <div class=\"desktop-language-wrapper\">
+            ";
+            // line 66
+            echo ($context["language"] ?? null);
+            echo "
+          </div>
+          <div class=\"desktop-currency-wrapper\">
+            ";
+            // line 69
+            echo ($context["currency"] ?? null);
+            echo "
+          </div>
+        </div>
+      ";
+        }
+        // line 73
+        echo "      ";
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 73), "get", [0 => "secondaryMenuPosition"], "method", false, false, false, 73) == "cart")) {
+            // line 74
+            echo "        <div class=\"top-menu secondary-menu\">";
+            echo twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 74), "get", [0 => "desktop_top_menu_2"], "method", false, false, false, 74);
+            echo "</div>
+      ";
+        }
+        // line 76
+        echo "      ";
+        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["j3"] ?? null), "settings", [], "any", false, false, false, 76), "get", [0 => "catalogSearchStatus"], "method", false, false, false, 76)) {
+            // line 77
+            echo "      <div class=\"desktop-search-wrapper mini-search\">
+        ";
+            // line 78
+            echo ($context["search"] ?? null);
+            echo "
+      </div>
+      ";
+        }
+        // line 81
+        echo "      <div class=\"desktop-cart-wrapper\">
+        ";
+        // line 82
+        echo ($context["cart"] ?? null);
+        echo "
+      </div>
+    </div>
+  </div>
+</div>
+
+";
+    }
+
+    public function getTemplateName()
+    {
+        return "journal3/template/journal3/headers/desktop/compact.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  212 => 82,  209 => 81,  203 => 78,  200 => 77,  197 => 76,  191 => 74,  188 => 73,  181 => 69,  175 => 66,  171 => 64,  169 => 63,  162 => 59,  157 => 56,  149 => 54,  127 => 51,  122 => 50,  120 => 49,  114 => 45,  108 => 43,  106 => 42,  101 => 41,  94 => 37,  88 => 34,  84 => 32,  82 => 31,  77 => 29,  74 => 28,  52 => 8,  50 => 7,  47 => 6,  43 => 4,  41 => 3,  37 => 1,);
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("", "journal3/template/journal3/headers/desktop/compact.twig", "C:\\xampp\\htdocs\\hexcode\\catalog\\view\\theme\\journal3\\template\\journal3\\headers\\desktop\\compact.twig");
+    }
+}
